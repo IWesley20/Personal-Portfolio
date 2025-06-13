@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $("#year").html(new Date().getFullYear());
+    
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');
