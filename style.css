@@ -226,6 +226,10 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.icon-container p {
+  font-size: 1.6rem;
+}
+
 .skill h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
