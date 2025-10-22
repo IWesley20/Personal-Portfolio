@@ -352,6 +352,16 @@ section {
 }
 
 /* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .portfolio-card {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-img {
+    max-height: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .top-nav {
     flex-direction: column;
