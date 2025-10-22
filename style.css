@@ -168,19 +168,23 @@ section {
 }
 
 /* ========== ABOUT ========== */
-.about .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.about {
+  padding: 6rem 2rem;
   text-align: center;
-  gap: 2rem;
+}
+
+.about .section-heading {
+  font-size: 4rem;
+  color: #ffe838;
+  margin-bottom: 2rem;
 }
 
 .about p {
   font-size: 1.8rem;
   max-width: 70rem;
+  margin: 0 auto 2rem;
   color: #ddd;
+  line-height: 1.7;
 }
 
 .social-media {
@@ -228,41 +232,74 @@ section {
 }
 
 /* ========== PORTFOLIO ========== */
-.portfolio-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8rem;
-  gap: 3rem;
+.portfolio {
+  padding: 8rem 2rem;
 }
 
-.portfolio-description h1 {
+.portfolio .section-heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #ffe838;
+  margin-bottom: 4rem;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.portfolio-img {
+  overflow: hidden;
+  height: 100%;
+}
+
+.portfolio-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-content h2 {
   font-size: 2.6rem;
   margin-bottom: 1rem;
   color: #fff;
 }
 
-.portfolio-description h6 {
-  font-size: 1.4rem;
-  color: #aaa;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-description p {
+.portfolio-content p {
+  font-size: 1.6rem;
   color: #ccc;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-.cta {
-  font-size: 1.5rem;
-  color: #ffe838;
-  transition: color 0.3s ease;
-}
-
-.cta:hover {
-  color: #fd57bf;
+.btn.small {
+  font-size: 1.4rem;
+  padding: 0.8rem 2rem;
+  align-self: flex-start;
 }
 
 /* ========== EXPERIENCE ========== */
